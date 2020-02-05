@@ -28,7 +28,7 @@ public class TapAdminHome extends AppCompatActivity {
             public void onClick(View view) {
                 pass=password.getText().toString();
                 if(pass.equals("admin@123")){
-                    Intent intent=new Intent(TapAdminHome.this,Tap_Home.class);
+                    Intent intent=new Intent(TapAdminHome.this,MainHome.class);
                     startActivity(intent);
                 }
                 else{
