@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LOGIN PAGE"
+        android:text="SCHOOL LOGIN PAGE"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
         android:textSize="32sp"/>
@@ -22,16 +22,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:hint="Emter your email"
+        android:hint="Enter your email"
         />
     <EditText
         android:id="@+id/password"
+        android:inputType="textPassword"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:hint="Emter password"
+        android:hint="Enter password"
         />
     <Button
         android:layout_width="wrap_content"

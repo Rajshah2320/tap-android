@@ -18,7 +18,7 @@ public class TapAdminHome extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_school_admin_home);
+        setContentView(R.layout.activity_tap_admin_home);
         email=findViewById(R.id.email);
         password=findViewById(R.id.password);
         submit=findViewById(R.id.submit);
