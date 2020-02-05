@@ -111,22 +111,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <Button
+            android:id="@+id/btnAccept"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="80dp"
             android:layout_marginTop="30dp"
             android:background="#00ff00"
             android:text="ACCEPT"
-            android:textColor="#ffffff"/>
+            android:textColor="#ffffff" />
+
         <Button
+            android:id="@+id/btnReject"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="30dp"
             android:background="#ff0000"
             android:text="REJECT"
-            android:textColor="#ffffff"/>
+            android:textColor="#ffffff" />
 
     </LinearLayout>
 
