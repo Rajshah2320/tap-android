@@ -32,7 +32,13 @@
             android:layout_width="170dp"
             android:layout_height="200dp"
             app:cardCornerRadius="20dp"
-            android:background="#1f1f1f"/>
+            android:background="#1f1f1f">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/automated_email"/>
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
     <LinearLayout
