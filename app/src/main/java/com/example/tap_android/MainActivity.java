@@ -31,7 +31,7 @@ public class MainActivity extends BaseActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(MainActivity.this,LoginVolunteerActivity.class);
+                Intent intent=new Intent(MainActivity.this,Login.class);
                 startActivity(intent);
                 finish();
             }
