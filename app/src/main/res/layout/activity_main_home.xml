@@ -17,15 +17,7 @@
             android:layout_marginStart="20dp"
             android:layout_width="170dp"
             android:layout_height="200dp"
-            app:cardCornerRadius="20dp"
-            android:background="#1f1f1f">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/users" />
-        </androidx.cardview.widget.CardView>
+            app:cardCornerRadius="20dp"/>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/autocom_cv"
