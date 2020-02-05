@@ -9,14 +9,12 @@ import android.widget.Button;
 
 public class AutoCom extends AppCompatActivity {
 
-    Button btnWhatsapp,btnMail;
+    Button btnWhatsapp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auto_com);
-
-        btnMail = findViewById(R.id.btnMail);
         btnWhatsapp = findViewById(R.id.btnWhatsapp);
 
         btnWhatsapp.setOnClickListener(new View.OnClickListener() {
@@ -27,12 +25,5 @@ public class AutoCom extends AppCompatActivity {
             }
         });
 
-        btnMail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(AutoCom.this, Mail.class);
-                startActivity(intent);
-            }
-        });
     }
 }
