@@ -5,17 +5,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     android:orientation="vertical"
     tools:context=".Login">
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:src="@drawable/a"/>
 
-    <Button
+    <com.dd.processbutton.FlatButton
         android:id="@+id/tap_admin"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="20dp"
         android:text="SIGN IN FOR TAP ADMIN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"/>
-    <Button
+        android:layout_gravity="center_horizontal"
+        app:pb_colorNormal="@android:color/holo_blue_light"
+        app:pb_colorPressed="@android:color/holo_blue_dark"/>
+    <com.dd.processbutton.FlatButton
         android:id="@+id/school_admin"
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"

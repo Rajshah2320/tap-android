@@ -18,7 +18,7 @@
             android:layout_width="170dp"
             android:layout_height="200dp"
             app:cardCornerRadius="20dp"
-            android:background="#1f1f1f"/>
+            android:src="@drawable/selection"/>
         <androidx.cardview.widget.CardView
             android:layout_marginTop="50dp"
             android:layout_marginStart="20dp"
