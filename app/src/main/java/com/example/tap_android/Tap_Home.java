@@ -30,6 +30,7 @@ public class Tap_Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tap__home);
+
         listView=findViewById(R.id.listView);
         firebaseDatabase=FirebaseDatabase.getInstance();
         databaseReference=firebaseDatabase.getReference("Users");
