@@ -26,7 +26,6 @@ public class CustomAdapter extends ArrayAdapter<String> {
         LayoutInflater inflater = context.getLayoutInflater();
         View row = inflater.inflate(R.layout.list1, null, true);
         nametv=row.findViewById(R.id.TextView);
-        System.out.println(name.get(pos));
         nametv.setText(name.get(pos));
         return row;
     }
