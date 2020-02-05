@@ -24,6 +24,7 @@ public class Tap_Home extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     ListView listView;
     ArrayList<String> name,uids;
+    static int pos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +58,7 @@ public class Tap_Home extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Intent intent=new Intent(Tap_Home.this,QuestionsVolunteer.class);
-                intent.putExtra("Position",position);
+                intent.putExtra("position",position);
                 startActivity(intent);
             }
         });
