@@ -23,7 +23,7 @@
         android:layout_height="20dp"
         android:layout_gravity="center_vertical"
         android:layout_marginEnd="10dp"
-        android:src="@drawable/rightbold" />
+        android:text=">" />
 
 
 </LinearLayout>
