@@ -9,9 +9,9 @@ import android.view.View;
 
 
 public class MainHome extends AppCompatActivity {
-    CircleImageView questioncv;
-    CircleImageView autocomcv;
-    CircleImageView callcv;
+    CardView questioncv;
+    CardView autocomcv;
+    CardView callcv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
