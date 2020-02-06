@@ -7,9 +7,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import io.grpc.SynchronizationContext;
+
 
 public class MainHome extends AppCompatActivity {
-    CardView questioncv, autocomcv, callcv;
+    CardView questioncv;
+    CardView autocomcv;
+    CardView callcv;
+    CardView attendancecv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +23,7 @@ public class MainHome extends AppCompatActivity {
         questioncv=findViewById(R.id.question_cv);
         autocomcv=findViewById(R.id.autocom_cv);
         callcv=findViewById(R.id.callcv);
+        attendancecv=findViewById(R.id.att_cv);
         callcv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,6 +45,14 @@ public class MainHome extends AppCompatActivity {
                 openWhatsappContact();
             }
         });
+        attendancecv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(MainHome.this, SchoolAttendance.class);
+                startActivity(intent);
+            }
+        });
+
 
 
     }
