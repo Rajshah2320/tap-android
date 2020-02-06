@@ -10,10 +10,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.dd.processbutton.FlatButton;
+
 public class SchoolAdminHome extends BaseActivity {
 
     private static final CharSequence PASS_SCHOOL ="school@123";
-    private Button submit_btn;
+    private FlatButton submit_btn;
     private EditText email;
     private EditText password;
 

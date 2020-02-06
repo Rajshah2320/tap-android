@@ -9,10 +9,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.dd.processbutton.FlatButton;
+
 public class TapAdminHome extends AppCompatActivity {
     EditText email;
     EditText password;
-    Button submit;
+    FlatButton submit;
     String pass;
 
     @Override
