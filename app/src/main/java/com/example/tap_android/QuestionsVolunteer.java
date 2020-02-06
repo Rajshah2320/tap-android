@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -23,9 +24,10 @@ import java.util.ArrayList;
 public class QuestionsVolunteer extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
-    ArrayList<String> a1,a2,a3,a4,email;
+    ArrayList<String> a1,a2,a3,a4,email,uids;
     TextView A1,A2,A3,A4;
     Button btnAccept,btnReject;
+    FirebaseUser firebaseUser;
     static String mail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +62,7 @@ public class QuestionsVolunteer extends AppCompatActivity {
                 Log.i("kaise ho", mail);
                 //String CC = "rajshah2320@gmail.com";
                 Intent emailIntent = new Intent(Intent.ACTION_SEND);
-
+                databaseReference.child(uids.get(pos)).child("selection").setValue(true);
                 emailIntent.setData(Uri.parse("mailto:"));
                 emailIntent.setType("text/plain");
                 emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
@@ -87,9 +89,9 @@ public class QuestionsVolunteer extends AppCompatActivity {
                 Log.i("kaise ho", mail);
                 //String CC = "rajshah2320@gmail.com";
                 Intent emailIntent = new Intent(Intent.ACTION_SEND);
-
                 emailIntent.setData(Uri.parse("mailto:"));
                 emailIntent.setType("text/plain");
+                databaseReference.child(uids.get(pos)).child("selection").setValue(false);
                 emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
                 //emailIntent.putExtra(Intent.EXTRA_CC, CC);
                 emailIntent.putExtra(Intent.EXTRA_SUBJECT, mailSub);
@@ -113,8 +115,10 @@ public class QuestionsVolunteer extends AppCompatActivity {
                 a2=new ArrayList<>();
                 a3=new ArrayList<>();
                 a4=new ArrayList<>();
+                uids=new ArrayList<>();
                 email=new ArrayList<>();
                 for(DataSnapshot childSnapshot:dataSnapshot.getChildren()){
+                    uids.add(0, childSnapshot.getKey());
                     a1.add(0, childSnapshot.child("motivation").getValue(String.class));
                     a2.add(0, childSnapshot.child("exp").getValue(String.class));
                     a3.add(0, childSnapshot.child("time").getValue(String.class));
