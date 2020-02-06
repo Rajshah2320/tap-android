@@ -9,8 +9,9 @@ import android.view.View;
 
 
 public class MainHome extends AppCompatActivity {
-    CardView questioncv;
-    CardView autocomcv;
+    CircleImageView questioncv;
+    CircleImageView autocomcv;
+    CircleImageView callcv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,14 @@ public class MainHome extends AppCompatActivity {
         setContentView(R.layout.activity_main_home);
         questioncv=findViewById(R.id.question_cv);
         autocomcv=findViewById(R.id.autocom_cv);
+        callcv=findViewById(R.id.callcv);
+        callcv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(MainHome.this,CallActivity.class);
+                startActivity(intent);
+            }
+        });
         questioncv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
