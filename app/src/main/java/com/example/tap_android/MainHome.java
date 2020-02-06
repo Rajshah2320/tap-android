@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainHome extends AppCompatActivity {
     CardView questioncv;
@@ -30,7 +29,7 @@ public class MainHome extends AppCompatActivity {
         autocomcv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainHome.this, com.example.tap_android.AutoCom.class);
+                Intent intent = new Intent(MainHome.this, com.example.tap_android.Whatsapp.class);
                 startActivity(intent);
             }
         });
