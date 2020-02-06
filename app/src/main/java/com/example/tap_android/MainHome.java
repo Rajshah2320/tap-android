@@ -42,8 +42,7 @@ public class MainHome extends AppCompatActivity {
         autocomcv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainHome.this, com.example.tap_android.Whatsapp.class);
-                startActivity(intent);
+                openWhatsappContact();
             }
         });
         attendancecv.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +54,18 @@ public class MainHome extends AppCompatActivity {
         });
 
 
+
+    }
+
+    void openWhatsappContact() {
+        String text = "hello";
+
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, text);
+        sendIntent.setType("text/plain");
+        sendIntent.setPackage("com.whatsapp");
+        startActivity(sendIntent);
 
     }
 }
