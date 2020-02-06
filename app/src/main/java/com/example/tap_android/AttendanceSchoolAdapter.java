@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -35,18 +36,17 @@ public class AttendanceSchoolAdapter extends ArrayAdapter<String> {
         imgbtnYes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgbtnYes.setVisibility(View.GONE);
-                imgbtnNo.setVisibility(View.GONE);
+                Toast.makeText(context, "Marked Present!", Toast.LENGTH_SHORT).show();
             }
         });
 
         imgbtnNo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imgbtnYes.setVisibility(View.GONE);
-                imgbtnNo.setVisibility(View.GONE);
+                Toast.makeText(context, "Marked Absent!", Toast.LENGTH_SHORT).show();
             }
         });
+
         return view;
     }
 
