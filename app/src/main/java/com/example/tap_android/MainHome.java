@@ -9,9 +9,7 @@ import android.view.View;
 
 
 public class MainHome extends AppCompatActivity {
-    CircleImageView questioncv;
-    CircleImageView autocomcv;
-    CircleImageView callcv;
+    CardView questioncv, autocomcv, callcv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,11 +36,22 @@ public class MainHome extends AppCompatActivity {
         autocomcv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainHome.this, com.example.tap_android.Whatsapp.class);
-                startActivity(intent);
+                openWhatsappContact();
             }
         });
 
+
+    }
+
+    void openWhatsappContact() {
+        String text = "hello";
+
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, text);
+        sendIntent.setType("text/plain");
+        sendIntent.setPackage("com.whatsapp");
+        startActivity(sendIntent);
 
     }
 }
