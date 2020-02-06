@@ -22,7 +22,7 @@
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:src="@drawable/ic_check_black_24dp"
-        android:id="@+id/present"
+        android:id="@+id/imgbtnYes"
         android:padding="5dp"
         ></ImageButton>
 
@@ -31,7 +31,7 @@
         android:layout_height="35dp"
         android:src="@drawable/ic_close_black_24dp"
         android:padding="5dp"
-        android:id="@+id/absent"></ImageButton>
+        android:id="@+id/imgbtnNo"></ImageButton>
 
 
 </LinearLayout>
