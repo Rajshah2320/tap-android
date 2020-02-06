@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginBottom="15dp">
-        <androidx.cardview.widget.CardView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/question_cv"
             android:layout_marginTop="50dp"
             android:layout_marginStart="20dp"
@@ -19,20 +19,15 @@
             android:layout_height="200dp"
             app:cardCornerRadius="20dp"/>
 
-        <androidx.cardview.widget.CardView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/autocom_cv"
             android:layout_width="170dp"
             android:layout_height="match_parent"
             android:layout_marginStart="20dp"
             android:layout_marginTop="50dp"
-            android:background="#1f1f1f"
-            app:cardCornerRadius="20dp">
+            android:src="@drawable/automated_email">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/automated_email" />
-        </androidx.cardview.widget.CardView>
+        </de.hdodenhof.circleimageview.CircleImageView>
 
     </LinearLayout>
     <LinearLayout
@@ -40,21 +35,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginBottom="15dp">
-        <androidx.cardview.widget.CardView
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/callcv"
             android:layout_marginTop="50dp"
             android:layout_marginStart="20dp"
             android:layout_width="170dp"
             android:layout_height="200dp"
-            app:cardCornerRadius="20dp"
-            android:background="#1f1f1f"/>
+            />
 
-        <androidx.cardview.widget.CardView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:layout_marginTop="50dp"
             android:layout_marginStart="20dp"
             android:layout_width="170dp"
             android:layout_height="200dp"
-            app:cardCornerRadius="20dp"
-            android:background="#1f1f1f"/>
+            app:cardCornerRadius="20dp" />
 
     </LinearLayout>
 
