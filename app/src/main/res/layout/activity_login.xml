@@ -20,7 +20,7 @@
         android:id="@+id/tap_admin"
         android:layout_marginTop="20dp"
         android:text="SIGN IN FOR TAP ADMIN"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         app:pb_colorNormal="@android:color/holo_blue_light"
@@ -28,7 +28,7 @@
     <com.dd.processbutton.FlatButton
         android:id="@+id/school_admin"
         android:layout_marginTop="30dp"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:text="SIGN IN FOR SCHOOL ADMIN"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"/>
