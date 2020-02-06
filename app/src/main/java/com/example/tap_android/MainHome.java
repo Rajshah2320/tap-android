@@ -58,7 +58,25 @@ public class MainHome extends AppCompatActivity {
     }
 
     void openWhatsappContact() {
-        String text = "hello";
+        String text = "Updates for club this Saturday\n" +
+                "\n" +
+                "Coding : \n" +
+                "1. Neerav shah  920008690\n" +
+                "2. Bhavi Dave     678901234\n" +
+                "3. Rahul Jain      987654321\n" +
+                "\n" +
+                "Dance \n" +
+                "1. Shyam shah   787919199\n" +
+                "2. Mohini Jha     7281919191\n" +
+                "\n" +
+                "Public speaking \n" +
+                "1. Jheel shah  920008690\n" +
+                "2. Bhana Dave     678901234\n" +
+                "3. Uma Jain      987654321\n" +
+                "\n" +
+                "Visual arts\n" +
+                "1. Rahul shah   787919199\n" +
+                "2. Raj Jha         728191919";
 
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);
